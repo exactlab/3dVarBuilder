@@ -4,7 +4,7 @@ ARCH=x86_64
 OS=LINUX
 COMPILER=mpif90
 # COMPILER=intel
-MACHINE=leonardo
+MACHINE=local
 
 DEBUG_3DVAR=
 # DEBUG_3DVAR=.dbg
@@ -29,10 +29,10 @@ else
     cp ../src/da_params.f90 .
 fi
 make clean
-gmake
+make
 if [ $? -ne 0 ] ; then  echo  ERROR; exit 1 ; fi
 
 echo preparing DAVars.txt
 cd ..
-gmake
+make
 if [ $? -ne 0 ] ; then  echo  ERROR; exit 1 ; fi
