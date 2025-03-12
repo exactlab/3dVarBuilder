@@ -13,7 +13,7 @@ export NETCDFF_INC=$(nf-config --includedir)
 export PNETCDF_INC=$(pnetcdf-config --includedir)
 export PNETCDF_LIB=$(pnetcdf-config --libdir)
 
-export PETSC_LIB=$(pkg-config --cflags-only-I petsc | sed 's/-I//g')
-export PETSC_INC=$(pkg-config --libs-only-L petsc | sed 's/-L//g')
+export PETSC_INC=$(pkg-config --cflags-only-I petsc | sed 's/-I//g')
+export PETSC_LIB=$(pkg-config --libs-only-L petsc | sed 's/-L//g')
 
 unset I_MPI_PMI_LIBRARY 
