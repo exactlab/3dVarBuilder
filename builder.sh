@@ -12,7 +12,7 @@ DEBUG_3DVAR=
 . compilers/machine_modules/${MACHINE}.${COMPILER}
 
 echo compiling 3dvar
-cd 3DVar
+cd 3dVarBio
 cp ../compilers/machine_modules/${MACHINE}.${COMPILER} machine_module.sh
 INC_FILE=${ARCH}.${OS}.${COMPILER}${DEBUG_3DVAR}.inc
 cp ../compilers/$INC_FILE compiler.inc
