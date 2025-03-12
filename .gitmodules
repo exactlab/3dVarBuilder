@@ -1,0 +1,3 @@
+[submodule "3dVarBio"]
+	path = 3dVarBio
+	url = git@github.com:exactlab/3dVarBio.git
